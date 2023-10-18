@@ -9,17 +9,17 @@ let result = "";
 
 if (userAge < 18) {
  // sconto del 20%;
- result = calc * 0.2;
+ result = calc * 0.8;
 } else if (userAge > 65) {
 //sconto del 40%
-    result = calc * 0.4;
+    result = calc * 0.6;
 } else if (userAge > 18 && userAge < 65){
 //nessuno sconto
     result = calc;
 }
 
 console.log(result);
-result = calc.toFixed(2);
+result = result.toFixed(2);
 const message = `il prezzo della tua tratta è ${result} € `;
 // OUTPUT
 document.getElementById("price").innerHTML = message;
